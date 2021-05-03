@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="77dp"
+        android:text="Ср. кол-во пар"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="157dp"
+        android:onClick="onClick"
+        android:text="Вывести"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lessons" />
+
+    <EditText
+        android:id="@+id/days"
+        android:layout_width="161dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="248dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Кол-во дней"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lessons"
+        android:layout_width="131dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="249dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Кол-во пар"
+        app:layout_constraintEnd_toStartOf="@+id/days"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
